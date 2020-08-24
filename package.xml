@@ -1,6 +1,6 @@
 <package>
   <name>hsrb_common_config</name>
-  <version>0.20.1</version>
+  <version>1.0.0</version>
   <description>HSRの実機・Gazebo共通設定ファイル</description>
   <maintainer email="xr-hsr-support@mail.toyota.co.jp">HSR Support</maintainer>
 

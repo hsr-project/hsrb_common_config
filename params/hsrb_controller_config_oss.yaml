@@ -52,12 +52,26 @@ omni_trajectory_controller:
     - odom_y
     - odom_r
   constraints:
-    stopped_velocity_tolerance: 0.5
-    goal_time: 0.05
+    goal_time: 3.0
+    stopped_velocity_tolerance: 0.0
+    odom_x:
+      trajectory: 0.1
+      goal: 0.01
+    odom_y:
+      trajectory: 0.1
+      goal: 0.01
+    odom_r:
+      trajectory: 1.6
+      goal: 0.2
+  stop_trajectory_duration: 1.0
   gains:
-    odom_x: {p: 1, d: 0.1, i: 0.01}
-    odom_y: {p: 1, d: 0.1, i: 0.01}
-    odom_r: {p: 1, d: 0.1, i: 0.01}
+    odom_x: {p: 10.0, d: 1.0, i: 0.01, i_clamp: 0.1}
+    odom_y: {p: 10.0, d: 1.0, i: 0.01, i_clamp: 0.1}
+    odom_r: {p: 10.0, d: 1.0, i: 0.01, i_clamp: 0.1}
+  velocity_ff:
+    odom_x: 1.0
+    odom_y: 1.0
+    odom_r: 1.0
 
 cmd_vel_controller:
   type: cmd_vel_controller/CmdVelController

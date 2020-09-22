@@ -1,7 +1,7 @@
 Overview
 +++++++++++++++++++++
 
-- Manages the common configuration files management package for the HSR-B controllers, sensors, and such for the actual robot and Gazebo.
+- Manages the common configuration files for the HSR-B controllers, sensors, and such for the actual robot and Gazebo.
 
 Management files
 ++++++++++++

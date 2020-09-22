@@ -1,17 +1,17 @@
 Overview
 +++++++++++++++++++++
 
-- HSR-Bのコントローラ・センサなどの実機・Gazebo共通設定ファイル管理パッケージを管理する。
+- Manages the common configuration files for the HSR-B controllers, sensors, and such for the actual robot and Gazebo.
 
-管理ファイル
+Management files
 ++++++++++++
 
 params
 ^^^^^^
 
-- **hsrb_controller_config.yaml** コントローラ用共通設定ファイル
+- **hsrb_controller_config.yaml:** Common configuration file for the controllers.
 
-- **hsrb_sensor_config** センサ用共通設定ファイル
+- **hsrb_sensor_config:** Common configuration file for the sensors.
 
 LICENSE
 ++++++++++++

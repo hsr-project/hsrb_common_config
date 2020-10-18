@@ -153,7 +153,7 @@ collision_detection_controller:
         - Current
         - Effort
       settings:
-        Current: {enable: ture, min: -1.4, max: 1.4, limit: 2.1}
+        Current: {enable: true, min: -1.4, max: 1.4, limit: 2.1}
         Effort: {enable: false, min: -407.5, max: 407.5, limit: 611.3}
     arm_roll_joint:
       names:
@@ -188,28 +188,28 @@ collision_detection_controller:
         - Current
         - Effort
       settings:
-        Current: {enable: ture, min: -0.87, max: 0.87, limit: 1.0}
+        Current: {enable: true, min: -0.87, max: 0.87, limit: 1.0}
         Effort: {enable: false, min: -1.6, max: 1.6, limit: 1.8}
     head_tilt_joint:
       names:
         - Current
         - Effort
       settings:
-        Current: {enable: ture, min: -0.87, max: 0.87, limit: 1.0}
+        Current: {enable: true, min: -0.87, max: 0.87, limit: 1.0}
         Effort: {enable: false, min: -5.7, max: 5.7, limit: 6.5}
     wrist_flex_joint:
       names:
         - Current
         - Effort
       settings:
-        Current: {enable: ture, min: -0.87, max: 0.87, limit: 1.0}
+        Current: {enable: true, min: -0.87, max: 0.87, limit: 1.0}
         Effort: {enable: false, min: -4.6, max: 4.6, limit: 5.2}
     wrist_roll_joint:
       names:
         - Current
         - Effort
       settings:
-        Current: {enable: ture, min: -0.87, max: 0.87, limit: 1.0}
+        Current: {enable: true, min: -0.87, max: 0.87, limit: 1.0}
         Effort: {enable: false, min: -4.6, max: 4.6, limit: 5.2}
   publish_rate: 25
 

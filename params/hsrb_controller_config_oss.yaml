@@ -45,12 +45,12 @@ offset_diff_drive_controller:
   pose_covariance_diagonal: [0.001, 0.001, 1000000.0, 1000000.0, 1000000.0, 1000.0]
   twist_covariance_diagonal: [0.001, 0.001, 1000000.0, 1000000.0, 1000000.0, 1000.0]
 
-omni_trajectory_controller:
+omni_base_controller:
   type: velocity_controllers/JointTrajectoryController
   joints:
     - odom_x
     - odom_y
-    - odom_r
+    - odom_t
   constraints:
     goal_time: 3.0
     stopped_velocity_tolerance: 0.0
@@ -60,18 +60,18 @@ omni_trajectory_controller:
     odom_y:
       trajectory: 0.1
       goal: 0.01
-    odom_r:
+    odom_t:
       trajectory: 1.6
       goal: 0.2
   stop_trajectory_duration: 1.0
   gains:
     odom_x: {p: 10.0, d: 1.0, i: 0.01, i_clamp: 0.1}
     odom_y: {p: 10.0, d: 1.0, i: 0.01, i_clamp: 0.1}
-    odom_r: {p: 10.0, d: 1.0, i: 0.01, i_clamp: 0.1}
+    odom_t: {p: 10.0, d: 1.0, i: 0.01, i_clamp: 0.1}
   velocity_ff:
     odom_x: 1.0
     odom_y: 1.0
-    odom_r: 1.0
+    odom_t: 1.0
 
 cmd_vel_controller:
   type: cmd_vel_controller/CmdVelController
